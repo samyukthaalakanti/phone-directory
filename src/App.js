@@ -1,19 +1,17 @@
 import { Component } from "react";
-
-
    class App extends Component() {
      render(){
      return(
-       <div>
-       <div className="container">
-         Phone Directory
-       </div>
-       <button>Add</button>
+       <div >
+         <div style={{textAlign:'center',textTransform:'uppercase',padding:20,backgroundcolor:'black',color:'white'}}>
+           Phone Directory
+           </div>
+       {/* <button>Add</button>
        <span>Name</span><br/>
-       <span>Phone</span>
+       <span>Phone</span>  */}
        </div>
+     
      );
-   }
-  }
-
-   export default App;
+     }
+    }
+export default App;
