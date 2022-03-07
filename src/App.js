@@ -1,9 +1,16 @@
-import React,{Component} from 'react';
+import React,{Component}from 'react';
+import AddSubscriber from './AddSubscriber';
 import './App.css';
 import Header from './Header';
 
 
    class App extends Component {
+    //  constructor(){
+    //    super();
+    //    this.state={
+    //    subscribersListToShow:[]
+    //  }
+    // }
     render(){
      let subscribers=[
        {id:1,
@@ -24,7 +31,7 @@ import Header from './Header';
     
      return(
        <div>
-         <Header heading="Phone Directory"/>
+         <Header heading="Phone Directory "/>
          <div className='component-body-container'>
       <button className='custom-btn add-btn'>Add</button>
       <div className="grid-container heading-container">
