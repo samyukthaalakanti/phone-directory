@@ -5,28 +5,28 @@ import Header from './Header';
 
 
    class App extends Component {
-    //  constructor(){
-    //    super();
-    //    this.state={
-    //    subscribersListToShow:[]
-    //  }
-    // }
-    render(){
-     let subscribers=[
-       {id:1,
-        name:'samyuktha',
-        phone:'9199442131'
-       },
-{id:2,
-  name:'sahithi',
-  phone:'9912176590'
-},
-{
-  id:3,
-  name:'karthik',
-  phone:'8341081998'
-}
-     ]
+     constructor(){
+       super();
+       this.state={
+       subscribersListToShow:[]
+     }
+     }
+     render(){
+//      let subscribers=[
+//        {id:1,
+//         name:'samyuktha',
+//         phone:'9199442131'
+//        },
+// {id:2,
+//   name:'sahithi',
+//   phone:'9912176590'
+// },
+// {
+//   id:3,
+//   name:'karthik',
+//   phone:'8341081998'
+// }
+//      ]
 
     
      return(
@@ -40,7 +40,7 @@ import Header from './Header';
           </div>
     </div>
         {
-          subscribers.map(sub =>{
+          this.state.subscribersListToShow.map(sub =>{
             return <div key={sub.id} className="grid-container">
               <span className='grid-item'>{sub.name}</span>
               <span className='grid-item'>{sub.phone}</span>
